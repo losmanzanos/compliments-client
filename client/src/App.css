@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+img {
+  margin-bottom: 40px;
+}
+
+.thumbs-up {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.give-comp {
+  margin: 20px;
+}
+
+#show-comp {
+  display: none;
+}
+
+.comp-input {
+  margin: 0px 5px;
+}
+
+#social {
+  background-color: rgba(78, 234, 54, 0.4);
+  margin-top: 50px;
+  padding: 20px 0px;
+  font-size: 12px;
+}
+
+#rocket img {
+  height: 50px;
+  animation: thing 3s infinite;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+@keyframes thing {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
+    transform: rotate(9deg);
+  }
+  2% {
+    transform: rotate(0deg);
+  }
+  3% {
+    transform: rotate(-9deg);
+  }
+  4% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(15deg);
+  }
+  6% {
+    transform: rotate(0deg);
+  }
+  7% {
+    transform: rotate(-15deg);
+  }
+  8% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
