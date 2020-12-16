@@ -5,7 +5,7 @@ const GetComp = () => {
 
   const getCompliment = async () => {
     try {
-      const response = await fetch("https://compliments-server.herokuapp.com/random");
+      const response = await fetch("https://compliment-server.herokuapp.com/random");
       console.log(response);
       const jsonData = await response.json();
       setCompliment(jsonData);

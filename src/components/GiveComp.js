@@ -6,7 +6,7 @@ const GiveComp = () => {
     e.preventDefault();
     try {
       const body = { compliment };
-      const response = await fetch("https://compliments-server.herokuapp.com/compliments", {
+      const response = await fetch("https://compliment-server.herokuapp.com/compliments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
