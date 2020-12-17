@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const GetComp = () => {
   const [compliment, setCompliment] = useState([]);
@@ -6,7 +6,6 @@ const GetComp = () => {
   const getCompliment = async () => {
     try {
       const response = await fetch("https://compliment-server.herokuapp.com/random");
-      console.log(response);
       const jsonData = await response.json();
       setCompliment(jsonData);
       if (response.status === 200) {
@@ -20,10 +19,6 @@ const GetComp = () => {
   const reveal = () => {
     document.getElementById("show-comp").style.display = "block";
   };
-
-  //   useEffect(() => {
-  //     getCompliment();
-  //   }, []);
 
   return (
     <div className="get-comp">
