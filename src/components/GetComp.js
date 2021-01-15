@@ -8,7 +8,7 @@ const GetComp = () => {
   const getCompliment = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/random");
+      const response = await fetch("https://compliment-server.herokuapp.com/random");
       console.log(response);
       const jsonData = await response.json();
       setCompliment(jsonData);
