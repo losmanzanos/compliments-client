@@ -17,6 +17,16 @@ img {
   margin-bottom: 40px;
 }
 
+.loading-div {
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#loading {
+  height: 25px;
+}
+
 .thumbs-up {
   margin-top: 15px;
   margin-bottom: 5px;
